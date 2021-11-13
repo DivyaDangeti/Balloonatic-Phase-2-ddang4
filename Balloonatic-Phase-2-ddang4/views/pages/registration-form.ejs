@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html id="bg">
+
+<head>
+    <link href="./css/styleLogin.css" rel="stylesheet" />
+    <script src="./js/button.js"></script>
+</head>
+
+<body id="reg">
+    <form class="rform" method="POST" action="/register">
+        <div id="reg_image-txt-container">
+            <div class="regtitle">User Registration</div>
+            <img src="./images/logo.jpeg" alt="Logo" />
+        </div>
+        <div class="form-container">
+            <div class="left">
+                <div class="input-container ic2">
+                    <input id="email" class="input" data-tip="one1" name="email" type="text" placeholder=" " />
+                    <div class="tooltip-container">Email will become your site user ID</div>
+                    <label for="email" class="placeholder">Email</label>
+                </div>
+                <div class="input-container ic1">
+                    <input id="password" class="input" type="password" placeholder=" " name="password" />
+                    <div class="tooltip-container">Password must be minimum of 8 characters, and include at least 1 number and 1 UPPERCASE letter</div>
+                    <label for="password" class="placeholder">Password</label>
+                </div>
+                <div class="input-container ic1">
+                    <input id="cpassword" class="input" type="password" placeholder=" " name="cpassword" />
+                    <div class="tooltip-container">Entry must match password above</div>
+                    <label for="cpassword" class="placeholder">Confirm Password</label>
+                </div>
+                <div class="input-container ic1">
+                    <input name="firstname" id="firstname" class="input" type="text" placeholder=" " />
+                    <div class="tooltip-container">Preferred first name</div>
+                    <label for="firstname" class="placeholder">First name</label>
+                </div>
+                <div class="input-container ic2">
+                    <input name="lastname" id="lastname" class="input" type="text" placeholder=" " />
+                    <div class="tooltip-container">Legal last name</div>
+                    <label for="lastname" class="placeholder">Last name</label>
+                </div>
+            </div>
+            <div class="right">
+                <div class="input-container ic2">
+                    <input name="address" id="address" class="input" type="text" placeholder=" " />
+                    <div class="tooltip-container">Optional: House number and street</div>
+                    <label for="address" class="placeholder">Address</label>
+                </div>
+                <div class="input-container ic2">
+                    <input name="city" id="city" class="input" type="text" placeholder=" " />
+                    <div class="tooltip-container">Optional: City of residence</div>
+                    <label for="city" class="placeholder">City</label>
+                </div>
+                <div class="input-container ic2">
+                    <select class="input" id="volume" name="state">
+              <%
+              for ( var i = 0; i < state.length; i++ )
+              {
+                  %><option value="<%=state[i] %>"><%=state[i] %></option><%
+              }
+              %>
+              </select>
+                    <div class="tooltip-container">Optional: State of residence</div>
+                    <label for="state" class="placeholder">State</label>
+                </div>
+                <div class="input-container ic2">
+                    <input name="postalCode" id="postalCode" class="input" type="text" placeholder=" " />
+                    <div class="tooltip-container">Optional: 5 character zip code</div>
+                    <label for="postalCode" class="placeholder">Postal Code</label>
+                </div>
+                <div class="input-container ic2">
+                    <input name="phone" id="phone" class="input" type="text" placeholder=" " />
+                    <div class="tooltip-container">Optional: Area code plus phone # in 'xxx-xxx-xxxx' format</div>
+                    <label for="phone" class="placeholder">Phone</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button type="text" class="submit1">Register</button>
+        </div>
+        <% if (locals.error) { %>
+            <div class="alert alert-danger">
+                <%= locals.error %>
+            </div>
+            <% } %>
+                <a class="rlink" href="/login">Want to Login</a>
+                <br />
+                <a href="/" class="rlink">Cancel</button>
+        </form>
+  </body>
+</html>

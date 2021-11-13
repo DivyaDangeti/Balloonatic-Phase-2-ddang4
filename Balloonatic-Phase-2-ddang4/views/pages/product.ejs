@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/styleProduct.css" rel="stylesheet">
+    <script src="./js/button.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <title> The Ballonatic Asylum</title>
+
+</head>
+
+<body>
+    <%- include('../partials/header'); %>
+    <main>
+
+        <%- include('../partials/nav'); %>
+
+    </main>
+
+    <section id="product">
+        <h1>Product Offers</h1>
+        <p class="productDesc">
+            The main features of the business are a large selection of balloons and balloon-themed products for all occasions, local delivery within 75 miles of the main store, two-day shipping anywhere in the USA, free shipping on orders over $100, and a "Balloon-of-the-Month"
+            club that sends an assortment of mystery balloons in a box once per month for $39.95.
+        </p>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <div class="productContainer">
+                <img src="./images/product1.jpg" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Assorted Ballons
+                </h4>
+                <p class="productDesc">Assorted color latex balloons upto 7 colors, 15 pieces, 12 inch.</p>
+                <p class="productPrice">Price: 5$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+            <div class="productContainer">
+                <img src="./images/product2.jpg" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Halloween Special
+                </h4>
+                <p class="productDesc">Latex Halloween balloons bunch in one pack, 10 pieces, 12 inch.</p>
+                <p class="productPrice">Price: 7$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+            <div class="productContainer">
+                <img src="./images/product3.jpeg" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Classic Balloons
+                </h4>
+                <p class="productDesc">Latex balloons of 4 colors along with Happy Birthday balloon.</p>
+                <p class="productPrice">Price: 10$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+            <div class="productContainer">
+                <img src="./images/product4.webp" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Foil Balloons
+                </h4>
+                <p class="productDesc">Foil Happy Birthday color balloons bunch, 10 pieces, 12 inch.</p>
+                <p class="productPrice">Price: 15$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+            <div class="productContainer">
+                <img src="./images/product5.jpeg" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Party Balloons
+                </h4>
+                <p class="productDesc">Latex party balloons in different colors, 110 pieces, different sizes.</p>
+                <p class="productPrice">Price: 15$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+            <div class="productContainer">
+                <img src="./images/product6.jpg" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Pastel Balloons
+                </h4>
+                <p class="productDesc">Latex pastel balloons in different colors, 150 pieces, different sizes.</p>
+                <p class="productPrice">Price: 17$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+            <div class="productContainer">
+                <img src="./images/product7.jpg" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Rainbow Balloons
+                </h4>
+                <p class="productDesc">Latex rainbow balloons in different colors, 200 pieces, different sizes.</p>
+                <p class="productPrice">Price: 20$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+            <div class="productContainer">
+                <img src="./images/product8.jpeg" alt="balloon1" class="productImage">
+                <h4 class="productTitle">
+                    Jungle Balloons
+                </h4>
+                <p class="productDesc">Latex jungle balloons in different colors, 500 pieces, different sizes</p>
+                <p class="productPrice">Price: 25$</p>
+                <button class="productSelect" onclick="myFunction()">Select</button>
+            </div>
+        </div>
+    </section>
+    <%- include('../partials/footer'); %>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<header id="pageHeader">
+  <a id="logo" href="/">
+    <img src="./images/logo.jpeg" alt="Logo" />
+    <title>The Balloonatic Asylum</title>
+  </a>
+  <nav id="mainNav">
+    <ul>
+      <li>
+        <div class="Productdropdown">
+          <button class="Productdropbtn" onclick="myProduct()">
+            Products
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/product">Birthday Bouquets</a>
+            <a href="/product">Balloony Occasion</a>
+            <a href="/product">Build a Balloon Bouquet</a>
+            <a href="/product">Decorating with Balloons</a>
+            <a href="/product">Balloons in Bulk</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="Productdropdown">
+          <button class="Productdropbtn" onclick="myAbout()">About</button>
+        </div>
+      </li>
+      <li>
+        <div class="Productdropdown">
+          <button class="Productdropbtn" onclick="myContact()">
+            Contact Us
+          </button>
+        </div>
+      </li>
+     
+      <% if (!user) { %>
+        <li>
+          <div class="Productdropdown">
+            <button class="Productdropbtn" onclick="loginPage()">
+              login
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="Productdropdown">
+            <button class="Productdropbtn" onclick="registerPage()">
+              register
+            </button>
+          </div>
+        </li>
+      <% } %>
+      <% if (user) { %>
+        <li>
+          <div class="Productdropdown">
+            <button class="Productdropbtn" onclick="logoutPage()">
+              logout
+            </button>
+          </div>
+        </li>
+      <% } %>
+    </ul>
+  </nav>
+</header>

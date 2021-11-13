@@ -1,0 +1,266 @@
+body {
+    align-items: center;
+    background-image: url("../images/loginbg1.jpeg");
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#reg body {
+    align-items: center;
+    background-image: url("../images/loginbg1.jpeg");
+    justify-content: center;
+    height: 50px;
+}
+
+.form {
+    background-color: #001357;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 500px;
+}
+
+.tooltiptext {
+    width: 120 px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6 px;
+    padding: 5 px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.alert-danger {
+    color: red;
+}
+
+.rform {
+    background-color: #001357;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: -20px;
+    width: 1000px;
+    height: 615px;
+}
+
+.left,
+.right {
+    width: 40%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#image-txt-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#image-txt-container img {
+    width: 85px;
+    border-radius: 5px;
+    margin-right: 55px;
+    margin-left: 75px;
+}
+
+.title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-left: 60px;
+    margin-top: -20px;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-left: -150px;
+}
+
+#reg_image-txt-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#reg_image-txt-container img {
+    width: 65px;
+    border-radius: 5px;
+    margin-right: 55px;
+    margin-left: 55px;
+    margin-bottom: -30px;
+}
+
+.regtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-left: 275px;
+    margin-top: 20px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.cut {
+    background-color: #001357;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.cut-short {
+    width: 50px;
+}
+
+.input:focus~.cut,
+.input:not(:placeholder-shown)~.cut {
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.tooltip-container {
+    color: white;
+    display: none;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.input-container:hover .tooltip-container {
+    display: block;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+    color: #808097;
+}
+
+.input:focus~.placeholder {
+    color: #f7f7f7;
+}
+
+.submit {
+    background-color: rgb(13, 84, 175);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(243, 239, 239);
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    margin-top: 34px;
+    text-align: center;
+    width: 35%;
+}
+
+.submit:active {
+    background-color: #06b;
+}
+
+.link {
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    padding-top: 6rem;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.rlink {
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 10rem;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.submit1 {
+    background-color: rgb(13, 84, 175);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(243, 239, 239);
+    cursor: pointer;
+    font-size: 25px;
+    height: 50px;
+    margin-top: 22px;
+    text-align: center;
+    width: 22%;
+}
+
+.submit1:active {
+    background-color: #06b;
+}

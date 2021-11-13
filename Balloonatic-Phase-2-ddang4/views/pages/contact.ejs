@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/styleContact.css" rel="stylesheet">
+    <script src="./js/button.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <title> The Ballonatic Asylum</title>
+
+</head>
+
+<body>
+    <%- include('../partials/header'); %>
+    <main>
+        <%- include('../partials/nav'); %>
+
+        <section class="hero">
+            <div class="contactBGimg">
+                <h1>Please contact us anytime...</h1>
+                <p>We would love to hear from you?
+                    <br>we're listening! questions? comments?<br> concerns? <br>our dedicated custom service team is here to help you out.
+                </p>
+        </section>
+        <section class="hero1">
+            <div class="contactBGimg1">
+                <div class="column">
+                    <h1> Balloonatic <br>Asylum</h1>
+                </div>
+                <div class="column">
+                    <h2>Contact Us</h2>
+                    <h4>Phn: +1-203-432-2300</h4>
+                    <h4>Email: customer-support@tba.com <br> Address: 149 Elm St, New Haven, CT 06511
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <section class="hero2">
+            <div class="contactBGimg2">
+                <div class="column">
+                    <h2> Stay in touch: </h2>
+                    <p>Sign up for our email updates and let us be a part of your small moments of joy and grand celebrations of life.</p>
+                </div>
+                <div class="column">
+                    <form id="form" name="form" class="subscribeForm" action="/" method="POST" onsubmit="return ValidateEmail();">
+                        <div>
+                            <input type="email" name="text" id="email" class="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div>
+                            <input type="Submit" id="submit" class="submitButton" value="Subscribe">
+                        </div>
+                    </form>
+                    <script src="./js/validation.js"></script>
+                </div>
+
+        </section>
+
+    </main>
+    <%- include('../partials/footer'); %>
+</body>
+
+</html>

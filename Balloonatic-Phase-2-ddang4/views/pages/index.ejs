@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/styleHome.css" rel="stylesheet" />
+    <script src="./js/quote.js"></script>
+    <script src="./js/features.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/time.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <title>The Ballonatic Asylum</title>
+  </head>
+
+  <body>
+    <%- include('../partials/header'); %>
+    <main>
+      <%- include('../partials/nav'); %>
+      <div class="hero">
+        <a class="prev-btn"><i class="fas fa-chevron-left"></i></a>
+        <div class="slides-container">
+          <div class="slide-image">
+            <img src="./images/heroimage1.png" alt="image1" />
+            <div id="dateNow">11/3/2017<br />2:45:12 p.m.</div>
+            <h2 class="centered">IT'S NOT A PARTY WITHOUT</h2>
+            <h1 class="center">Balloons!</h1>
+          </div>
+          <div class="slide-image">
+            <img src="./images/heroimage2.jpeg" alt="image2" />
+            <h1 class="centerImg">Halloween Treats!</h1>
+          </div>
+          <div class="slide-image">
+            <img src="./images/heroimage3.jpeg" alt="image3" />
+          </div>
+        </div>
+        <a class="next-btn"><i class="fas fa-chevron-right"></i></a>
+
+        <div class="navigation-dots"></div>
+      </div>
+      <script src="./js/images.js"></script>
+      <div class="mainSection">
+        <div class="section1">
+          <p class="sectionTitle">Product Features</p>
+          <div class="slideshow-container">
+            <% for ( var i = 0; i < products.length; i++ ) { %>
+            <article class="fade mySlides1">
+            <img src=<%= products[i].imageURL %> style="width:200px;height:200px;">
+              <ul>
+                <p>Product name: <b><%= products[i].productName %></b></p>
+                <p>Product category: <b><%= products[i].category %></b></p>
+                <p>Product color: <b><%= products[i].color %></b></p>
+                <p>
+                  Product price per unit: <b><%= products[i].unitPrice %></b>
+                </p>
+                <p>
+                  Product quantity per unit:
+                  <b><%= products[i].quantityInStock %></b>
+                </p>
+                <p>
+                  Product manufacturer:
+                  <b><%= products[i].manufacturer %></b>
+                </p>
+                <p>
+                  Product material:
+                  <b><%= products[i].material %></b>
+                </p>
+                <p>
+                  Product size:
+                  <b><%= products[i].size %></b>
+                </p>
+              </ul>
+            </article>
+            <% } %>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <aside class="mainAside">
+          <p class="sectionTitle">Customer Tributes</p>
+
+          <article class="quote" id="home-quote">
+            A quote from the principal owner, Krista E:<br />"We have a range of
+            colours and options available, please look at the gallery for a
+            portfolio of pictures. Get in touch and we can discuss your
+            requirements and how you envision your bespoke decorations. Our
+            prime goal is your satisfaction."
+          </article>
+        </aside>
+      </div>
+    </main>
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
