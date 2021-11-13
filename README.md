@@ -12,7 +12,7 @@
 
 ## About the Website
 **The Balloonatic Asylum** is a company which sells high quality latex and mylar ballloons at affordable prices. They also make customized hand-crafted ballons for any occasions. All you need to do is send them a photo of what you want and they will bring it to life as a quality balloon. They provide reliable service to the customers. 
-![alt text](https://github.com/DivyaDangeti/Balloonatic-Phase-1-ddang4/blob/main/Balloonatic-Phase-1-ddang4/Output%20screenshots/HomePage1.png)
+![alt text](https://github.com/DivyaDangeti/Balloonatic-Phase-2-ddang4/blob/main/Balloonatic-Phase-2-ddang4/Output%20Screenshots/1.png)
 
 ## Acheived 
 > This project has different pages such as
